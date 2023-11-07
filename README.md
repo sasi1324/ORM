@@ -4,9 +4,6 @@
 ## AIM
 To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
 
-## Entity Relationship Diagram
-
-Include your ER diagram here
 
 ## DESIGN STEPS
 
@@ -24,6 +21,13 @@ Execute Django admin and create 10 Football players
 
 ## PROGRAM
 ```
+
+admin.py
+
+from django.contrib import admin
+from .models import footballplayer,footballplayerAdmin
+admin.site.register(footballplayer,footballplayerAdmin)
+
 models.py
 
 from django.db import models
@@ -38,23 +42,12 @@ class footballplayer (models.Model):
 class footballplayerAdmin(admin.ModelAdmin):
     list_display=('name','weight','age','members','experiance')
 
-    admin.py
-    
-from django.contrib import admin
-from .models import footballplayer,footballplayerAdmin
-admin.site.register(footballplayer,footballplayerAdmin)
+
 ```
-
-
-Include your code here
 
 ## OUTPUT
 
 ![Alt text](image.png)
-
-
-Include the screenshot of your admin page.
-
-
+ 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
