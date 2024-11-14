@@ -1,4 +1,4 @@
-# Ex-3: Django ORM Web Application
+# Ex-1: Django ORM Web Application
 
 ## DATE: 
 
